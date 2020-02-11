@@ -1,0 +1,59 @@
+* {
+  background: rgb(224, 226, 224);
+  padding: 0px;
+  margin: 0px;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.calculadora {
+  border-radius: 15px;
+  background-color: #9e9a9a;
+  padding: 30px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.teclas {
+  display: flex;
+  padding: 9px;
+}
+
+.pantalla {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+}
+
+.numeros {
+  padding: 18px 9px 18 px 18px;
+}
+
+.numeros button {
+  border: 0px;
+  background-color: #fff;
+  transition: all 0.09s;
+} 
+
+.numeros button:hover {
+  box-shadow: 0px 0px 12px #aaa;
+}
+
+.operacao button{
+  display: block;
+  width: 54px;
+  height: 54px;
+  padding: 9px 15px;
+  background-color: rgba(30,  60, 160, 0.9);
+  border: none;
+}
+
+.numeros div{
+  text-align: center;
+}
+
+button {
+  margin: 3px 0px;
+  padding: 15px 24px;
+  font-size: 19px;
+}
