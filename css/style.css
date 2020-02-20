@@ -22,6 +22,7 @@
 .pantalla {
   background-color: black;
   color: #fff;
+  white-space: nowrap;
   padding: 18px;
 }
 
