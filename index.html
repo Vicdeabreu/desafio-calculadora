@@ -10,12 +10,15 @@
 <body>
   <div class="calculadora">
     <div class="pantalla">
-      <div id="resultado">
-
-      </div>
+      <div id="resultado">92</div>
     </div>
     <div class="teclas">
       <div class="numeros">
+        <div>
+          <button id="abrePar">(</button>
+          <button id="cierraPar">)</button>
+          <button id="porcentaje">%</button>
+        </div>
         <div>
           <button id="n1">1</button>
           <button id="n2">2</button>
@@ -32,16 +35,19 @@
           <button id="n9">9</button>
         </div>
         <div>
-          <button id="C">C</button>
+          <button id="punto">.</button>
           <button id="n0">0</button>
-          <button id="CE">E</button>
+          <button id="ce">=</button>
         </div>
       </div>
       <div class="operacao">
-        <button id="s" class="btn btn-secondary">+</button>
-        <button id="r" class="btn btn-secondary">-</button>
-        <button id="d" class="btn btn-secondary">÷</button>
-        <button id="m" class="btn btn-secondary">x</button>
+        <div class="ce-btn">
+          <button id="CE">CE</button>
+        </div>
+        <button id="s">+</button>
+        <button id="r">-</button>
+        <button id="d">÷</button>
+        <button id="m">x</button>
       </div>
     </div>
   </div>
