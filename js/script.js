@@ -17,6 +17,7 @@ document.getElementById("ce").addEventListener("click",ce);
 document.getElementById("abrePar").addEventListener("click",abrePar);
 document.getElementById("cierraPar").addEventListener("click",cierraPar);
 document.getElementById("porcentaje").addEventListener("click",porcentaje);
+document.getElementById("sr").addEventListener("click",showResult);
 
 function n1(){
   let resultPantalla = document.getElementById('resultado').innerHTML;
@@ -99,25 +100,25 @@ function cierraPar(){
 function o1(){
   let resultPantalla = document.getElementById('resultado').innerHTML;
   let sumado = document.getElementById('s').innerHTML;
-  document.getElementById('resultado').innerHTML = resultPantalla + " " + sumado + " "
+  document.getElementById('resultado').innerHTML = resultPantalla + sumado
 }
 
 function o2(){
   let resultPantalla = document.getElementById('resultado').innerHTML;
   let sumado = document.getElementById('r').innerHTML;
-  document.getElementById('resultado').innerHTML = resultPantalla + " " + sumado + " "
+  document.getElementById('resultado').innerHTML = resultPantalla + sumado
 }
 
 function o3(){
   let resultPantalla = document.getElementById('resultado').innerHTML;
   let sumado = document.getElementById('m').innerHTML;
-  document.getElementById('resultado').innerHTML = resultPantalla + " " + sumado + " "
+  document.getElementById('resultado').innerHTML = resultPantalla + sumado
 }
 
 function o4(){
   let resultPantalla = document.getElementById('resultado').innerHTML;
   let sumado = document.getElementById('d').innerHTML;
-  document.getElementById('resultado').innerHTML = resultPantalla + " " + sumado + " "
+  document.getElementById('resultado').innerHTML = resultPantalla + sumado
 }
 
 function showResult(){
@@ -127,15 +128,24 @@ function showResult(){
   let mult = resultPantalla.indexOf("x");
   let div = resultPantalla.indexOf("÷");
   if (suma !== -1) {
-
+    arr = resultPantalla.split("+", 2);
+    res = parseInt(arr[0]) + parseInt(arr[1]);
+    document.getElementById("resultado").innerHTML = res;
   } else if (resta !== -1) {
-    
+    arr = resultPantalla.split("-", 2);
+    res = arr[0] - arr[1];
+    document.getElementById("resultado").innerHTML = res;
   } else if (mult !== -1) {
-    
+    arr = resultPantalla.split("x", 2);
+    res = arr[0] * arr[1];
+    document.getElementById("resultado").innerHTML = res;
   } else if (div !== -1) {
-    
+    arr = resultPantalla.split("÷", 2);
+    res = arr[0] / arr[1];
+    document.getElementById("resultado").innerHTML = res;
   }
-  document.getElementById('resultado').innerHTML = resultPantalla + " " + sumado + " "
+
+  document.getElementById('resultado').innerHTML = resultPantalla + sumado
 }
 
 
