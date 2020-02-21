@@ -15,18 +15,20 @@
 }
 
 .teclas {
+  max-width: max-content;
   display: flex;
   padding: 9px;
 }
 
 .pantalla {
   background-color: black;
+  margin-bottom: 3px;
   color: #fff;
   white-space: nowrap;
   padding: 18px;
 }
 
-#resultado {
+#resultado, #historial {
   text-align: end;
   background-color: black;
   padding-bottom: 0px;
